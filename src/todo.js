@@ -12,11 +12,15 @@ export function newTodoItem(name, description, completed = false) {
 
     row.appendChild(descriptionElement);
 
+    const wrapper = document.createElement('td');
+
     const completedElement = document.createElement('input');
     completedElement.setAttribute('type', 'checkbox');
     completedElement.checked = completed;
 
-    row.appendChild(completedElement);
+    wrapper.appendChild(completedElement);
+
+    row.appendChild(wrapper);
 
     return row;
 }

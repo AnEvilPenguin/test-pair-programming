@@ -15,8 +15,17 @@ table {
     width: 50vw;
 }
 
+td,
+th {
+    min-width: 32ch;
+    text-align: center;
+}
+
 td:nth-last-child(2),
 th:nth-last-child(2) {
     width: 100%;
-    text-align: left;
+}
+
+input {
+    margin: 0px auto;
 }
