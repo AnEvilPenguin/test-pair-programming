@@ -20,3 +20,16 @@ export function newTodoItem(name, description, completed = false) {
 
     return row;
 }
+
+export function promptForItem()
+{
+    let name;
+
+    do {
+        name = prompt('Enter a name');
+    } while(name == null || name == '');
+
+    const description = prompt('Enter a description');
+
+    return newTodoItem(name, description);
+}

@@ -1,5 +1,5 @@
 import './styles.css';
-import { newTodoItem } from './todo';
+import { newTodoItem, promptForItem } from './todo';
 
 const body = document.querySelector('body');
 body.classList.add('background');
@@ -41,6 +41,11 @@ tableBody.appendChild(task1);
 
 const task2 = newTodoItem('Task2', 'A new Task', true);
 tableBody.appendChild(task2);
+
+newButton.addEventListener('mousedown', () => {
+    const todo = promptForItem();
+    tableBody.appendChild(todo);
+});
 
 const tableFooter = table.createTFoot();
 
