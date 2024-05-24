@@ -1,4 +1,22 @@
 body {
     margin: 0px;
     padding: 0px;
+
+    background-color: darkslategray;
+    color: azure;
+}
+
+.container {
+    background-color: aqua;
+    color: black;
+}
+
+table {
+    width: 50vw;
+}
+
+td:nth-last-child(2),
+th:nth-last-child(2) {
+    width: 100%;
+    text-align: left;
 }
